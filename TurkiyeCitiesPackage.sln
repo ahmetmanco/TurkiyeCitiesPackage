@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurkiyeCitiesPackage", "TurkiyeCitiesPackage\TurkiyeCitiesPackage.csproj", "{0ADB16E6-59AB-4316-AA66-9F1BAF8FD66D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ADB16E6-59AB-4316-AA66-9F1BAF8FD66D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ADB16E6-59AB-4316-AA66-9F1BAF8FD66D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ADB16E6-59AB-4316-AA66-9F1BAF8FD66D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ADB16E6-59AB-4316-AA66-9F1BAF8FD66D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD2CE919-AD33-465B-8248-DA4C9D1D06A3}
+	EndGlobalSection
+EndGlobal
