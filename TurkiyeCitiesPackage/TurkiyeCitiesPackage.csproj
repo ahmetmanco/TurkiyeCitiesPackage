@@ -11,6 +11,9 @@
 Buradaki amaç; Kullanıcı , bilgilerini düzenlemek istediğinde adres kısmındaki illerden birini seçip, o ilin ilçesinden herhangi birini seçebileceği bir pakettir.</Description>
     <Copyright>Copyright 2024</Copyright>
     <PackageIcon>archivevv.png</PackageIcon>
+    <RepositoryUrl>https://github.com/ahmetmanco/TurkiyeCitiesPackage/compare/master?expand=1</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <NeutralLanguage>tr</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
