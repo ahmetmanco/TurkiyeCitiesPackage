@@ -14,6 +14,9 @@ Buradaki amaç; Kullanıcı , bilgilerini düzenlemek istediğinde adres kısmı
     <RepositoryUrl>https://github.com/ahmetmanco/TurkiyeCitiesPackage/compare/master?expand=1</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <NeutralLanguage>tr</NeutralLanguage>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.2</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,6 +28,13 @@ Buradaki amaç; Kullanıcı , bilgilerini düzenlemek istediğinde adres kısmı
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
