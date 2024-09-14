@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System.Text.Json.Serialization;
+using System.Reflection;
 
 namespace TurkiyeCitiesPackage
 {
@@ -9,9 +9,24 @@ namespace TurkiyeCitiesPackage
 
         public CityServices()
         {
-            var citiesJson = File.ReadAllText("Cities.json");
-            _cityList = JsonConvert.DeserializeObject<List<City>>(citiesJson);
+            var assembly = Assembly.GetExecutingAssembly();
+            var resourceName = "TurkiyeCitiesPackage.Cities.json"; // Dosya yolunu belirtin
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            {
+                if (stream == null)
+                {
+                    throw new Exception($"Resource {resourceName} not found.");
+                }
+
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    var citiesJson = reader.ReadToEnd();
+                    _cityList = JsonConvert.DeserializeObject<List<City>>(citiesJson);
+                }
+            }
         }
+
         public List<City> GetAllCities()
         {
             return _cityList;
@@ -21,7 +36,8 @@ namespace TurkiyeCitiesPackage
         {
             return _cityList.FirstOrDefault(x => x.Id == id);
         }
-        public List<Districts> GetDistrictsByCityId(int cityId)
+
+        public List<District> GetDistrictsByCityId(int cityId)
         {
             var city = _cityList.FirstOrDefault(c => c.Id == cityId);
             return city?.Districts;
