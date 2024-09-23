@@ -9,7 +9,7 @@ namespace TurkiyeCitiesPackage
 
         public CityServices()
         {
-            var assembly = Assembly.GetExecutingAssembly();
+            var assembly = typeof(CityServices).Assembly;
             var resourceName = "TurkiyeCitiesPackage.Cities.json"; // Dosya yolunu belirtin
 
             using (Stream stream = assembly.GetManifestResourceStream(resourceName))
