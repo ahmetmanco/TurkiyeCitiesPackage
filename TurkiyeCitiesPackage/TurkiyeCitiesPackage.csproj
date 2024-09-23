@@ -15,7 +15,7 @@ Buradaki amaç; Kullanıcı , bilgilerini düzenlemek istediğinde adres kısmı
     <RepositoryType>Git</RepositoryType>
     <NeutralLanguage>tr</NeutralLanguage>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
